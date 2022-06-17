@@ -13,7 +13,7 @@
 #include<iostream>
 using namespace std;
 
-float v = 0.4; // must be greater than 0.25
+
 std_msgs::Float64MultiArray waypoint;
 #include "math.h"
 
@@ -24,14 +24,14 @@ void read_path_file(){
 
   float x, y;
   ifstream myFile;
-  myFile.open("/home/nvidia/catkin_ws/src/final_sim/src/path_final.txt");
-  for( int g = 0; g < 42; g ++){
+  myFile.open("/home/nvidia/catkin_ws/src/final_sim/src/pppp.txt");
+  for( int g = 0; g <38 ; g ++){
     myFile>>x>>y;
     // printf("%f %f\n", x, y);
     waypoint.data.push_back(x);
     waypoint.data.push_back(y);
     waypoint.data.push_back(0);
-    waypoint.data.push_back(0.4);
+    waypoint.data.push_back(0.5);
     //if( y > 13.5 && y < 16) 
       //waypoint.data.push_back(v - 0.2);
     //else
@@ -43,8 +43,9 @@ void read_path_file(){
     waypoint.data[j+2] = atan2( (waypoint.data[j+1+4] -  waypoint.data[j+1]),  (waypoint.data[j+4]-waypoint.data[j]));// + prev_angle)/2;
     //prev_angle = waypoint.data[j+2];
 	if (waypoint.data[j+2] > 3.14/2 || waypoint.data[j+2] < -3.14/2) waypoint.data[j+3] = 0.3;
-	else waypoint.data[j+3] = 0.4;
+	else waypoint.data[j+3] = 0.5;
   }
+
 waypoint.data[ss-2] = 0;
 waypoint.data[ss-4] = 15.525;
 waypoint.data[ss-3] = 14.765;
@@ -58,17 +59,17 @@ int main(int argc, char** argv)
   ros::init(argc, argv, "path_sim");
   ros::NodeHandle nh;
 
-  path_pub = nh.advertise<std_msgs::Float64MultiArray>("way_point", 1);
+  path_pub = nh.advertise<std_msgs::Float64MultiArray>("way_point", 1000);
 
-  ros::Rate loop_rate(30);
+  ros::Rate loop_rate(10);
  read_path_file();
   int limit = 0;
 
   while (ros::ok() ){
-    if( limit < 5)
+    //if( limit < 1)
      path_pub.publish(waypoint);
     loop_rate.sleep();
-    limit ++;
+    //limit ++;
   }
   ros::spin();
 }

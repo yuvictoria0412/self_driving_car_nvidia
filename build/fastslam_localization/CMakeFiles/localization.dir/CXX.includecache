@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nvidia/catkin_ws/src/fastslam_localization/src/MatrixCal.h
+
+/home/nvidia/catkin_ws/src/fastslam_localization/src/QuadrantAngle.h
+
+/home/nvidia/catkin_ws/src/fastslam_localization/src/VehicleModel.cpp
+VehicleModel.h
+/home/nvidia/catkin_ws/src/fastslam_localization/src/VehicleModel.h
+cmath
+-
+stdio.h
+-
+MatrixCal.h
+/home/nvidia/catkin_ws/src/fastslam_localization/src/MatrixCal.h
+QuadrantAngle.h
+/home/nvidia/catkin_ws/src/fastslam_localization/src/QuadrantAngle.h
+
+/home/nvidia/catkin_ws/src/fastslam_localization/src/VehicleModel.h
+

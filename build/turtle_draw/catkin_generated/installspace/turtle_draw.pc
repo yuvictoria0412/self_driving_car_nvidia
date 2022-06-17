@@ -1,0 +1,8 @@
+prefix=/home/nvidia/catkin_ws/install
+
+Name: turtle_draw
+Description: Description of turtle_draw
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -10,8 +10,8 @@ K = [[-1.0212,0.0,0.0],
 ### parameter###
 
 dt = 0.1
-maxv = 0.5
-maxw = 1
+maxv = 0.5##0.5
+maxw = 1.0##1.0
 
 way_point_number = 20
 waypointdata = []

@@ -1,0 +1,2 @@
+experiment1:fastslam_localization:final_sim:lab2:lab6:pure_pursuit:rplidar_ros:simulation_env:turtle_draw
+-DCATKIN_DEVEL_PREFIX=/home/nvidia/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nvidia/catkin_ws/install -G Unix Makefiles

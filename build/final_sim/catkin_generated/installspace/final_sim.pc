@@ -1,0 +1,8 @@
+prefix=/home/nvidia/catkin_ws/install
+
+Name: final_sim
+Description: Description of final_sim
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

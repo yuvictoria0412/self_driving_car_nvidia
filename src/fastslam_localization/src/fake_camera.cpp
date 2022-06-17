@@ -40,14 +40,15 @@ float changedegree(float degree){
 double gaussrand()
 {
     double mean = 0;
-    double std = 0.12;
+    double std = 0.06;//0.12
     double u, v;//uniform distribution
     double x, y;//normal distribution
     u = rand() / (double)RAND_MAX;//RAND_MAX=32767
     v = rand() / (double)RAND_MAX;
     x = sqrt(-2 * log(u)) * cos(2 * M_PI * v) * std + mean;//M_PI=3.14159
-    //return x;
-	return 0;
+    return x;
+    //return 0;
+	
 }
 //get robot position
 void poseCallback(const geometry_msgs::Twist::ConstPtr& msg)
