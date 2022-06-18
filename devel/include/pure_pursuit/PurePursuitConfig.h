@@ -393,9 +393,9 @@ PurePursuitConfig::GroupDescription<PurePursuitConfig::DEFAULT, PurePursuitConfi
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       __min__.max_linear_velocity = 0.0;
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __max__.max_linear_velocity = 0.45;
+      __max__.max_linear_velocity = 0.42;
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
-      __default__.max_linear_velocity = 0.45;
+      __default__.max_linear_velocity = 0.42;
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
       Default.abstract_parameters.push_back(PurePursuitConfig::AbstractParamDescriptionConstPtr(new PurePursuitConfig::ParamDescription<double>("max_linear_velocity", "double", 0, "Maximum allowed linear velocity (absolute value).", "", &PurePursuitConfig::max_linear_velocity)));
 //#line 291 "/opt/ros/melodic/lib/python2.7/dist-packages/dynamic_reconfigure/parameter_generator_catkin.py"
