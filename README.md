@@ -1,5 +1,5 @@
 # NTHU Self driving car projects
 - lab2: localization control
 - lab3: implement A*
-- lab6: AMCL localization
+- final project: AMCL localization competition *** Win the first place ***
   
